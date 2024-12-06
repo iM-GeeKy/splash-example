@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fitzwabs.splashexample"
     },
     "android": {
       "adaptiveIcon": {
@@ -27,15 +28,33 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#1b1b1f",
+            "image": "./assets/images/splash-dark.png"
+          },
+          "image": "./assets/images/splash-light.png",
           "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "resizeMode": "contain"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "fad6b853-6d2e-4e4b-bdfc-10d06d1dcc5b"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/fad6b853-6d2e-4e4b-bdfc-10d06d1dcc5b"
     }
   }
 }
